@@ -1,0 +1,37 @@
+*** INSTRUCTION ***
+1. Prepration
++ Untar the thumbtack.tar.gz to your location of choice
++ Go to directory where Thumbtack folder exists
+
+2. Compile the program
++ Run the following command:
+$ javac Thumbtack/Program.java Thumbtack/SimpleDatabase.java
+
+*Note: $ is just a prompt, not a part of the command
+
+3. Run the program
++ You can run program as:
+$ java Thumbtack.Program [textfile]
++ with 'textfile' is the path + filename of your text file
+
++ For example: If you want to run the test case 1 inside the Thumbtack folder, run the following command:
+$ java Thumbtack.Program Thumbtack/test1
+
++ If you want to run using input command, run the following command:
+$ java Thumbtack.Program
++ then enter your commands (one by one followed by ENTER)
+
+4. Extras:
+The thumbtack.tar contains 11 following files (2 java files, one README and 8 test cases):
++ Program.java
++ SimpleDatabase.java
++ README
++ test[1-8] (8 files)
+
+5. Notes:
+Since the challenge description doesn't specific if the value has to be numbers or a specific type, 
+I assume the program can accept any kind of values. If the program is supposed to accept only integer 
+value, regular expression (string.matches("\\d+")) can be used to verify the input before put to database.
+
+Also, the program is strictly following the command format that the challenge requires so it won't allow 
+any "partially-correct" to go through.

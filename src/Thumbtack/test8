@@ -1,0 +1,12 @@
+BEGIN
+TEST
+GET
+SET a
+commit
+rollback
+end
+begin
+unset
+SET a 10 20 30
+GET a
+END
