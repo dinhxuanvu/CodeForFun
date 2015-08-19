@@ -103,7 +103,6 @@ public class Program {
 			db.rollback();
 		} else if (arr[0].equals("COMMIT")) {
 			db.commit();
-			;
 		} else {
 			System.out.println("INVALID COMMAND");
 		}
