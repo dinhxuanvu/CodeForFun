@@ -96,7 +96,6 @@ public class Program {
 		} else if (arr[0].equals("NUMEQUALTO")) {
 			if (arr.length == 2) {
 				db.numEqualTo(arr[1]);
-				;
 			} else
 				System.out.println("INVALID COMMAND");
 		} else if (arr[0].equals("ROLLBACK")) {
