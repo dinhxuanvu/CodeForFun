@@ -11,9 +11,9 @@ public class PalindromeLinkedList {
 
 	public static void main(String[] args) {
 		ListNode one = new ListNode(1);
-		ListNode two = new ListNode(0);
-		ListNode mid = new ListNode(2);
-		ListNode thr = new ListNode(0);
+		ListNode two = new ListNode(2);
+		ListNode mid = new ListNode(3);
+		ListNode thr = new ListNode(2);
 		ListNode fou = new ListNode(1);
 		
 		one.next = two;
@@ -68,6 +68,12 @@ public class PalindromeLinkedList {
 		}
 
 		return true;
+	}
+	
+	public static boolean isPalindrome(ListNode head) {
+		if (head == null) {
+			return true;
+		}
 	}
 	
 	public static void printList(ListNode head) {
