@@ -22,6 +22,7 @@ public class PalindromeLinkedList {
 		thr.next = fou;
 		
 		System.out.println(isPalindrome(one));
+		//System.out.println(isPalindrome2(one));
 		printList(one);
 
 	}
@@ -30,50 +31,69 @@ public class PalindromeLinkedList {
 		if (head == null || head.next == null)
 			return true;
 
-		// find list center
-		ListNode fast = head;
 		ListNode slow = head;
-
+		ListNode fast = head;
+		
 		while (fast.next != null && fast.next.next != null) {
-			fast = fast.next.next;
 			slow = slow.next;
+			fast = fast.next.next;
 		}
-
-		ListNode secondHead = slow.next;
+		
+		ListNode second = slow.next;
 		slow.next = null;
-
-		// reverse second part of the list
-		ListNode p1 = secondHead;
-		ListNode p2 = p1.next;
-
-		while (p1 != null && p2 != null) {
-			ListNode temp = p2.next;
-			p2.next = p1;
-			p1 = p2;
-			p2 = temp;
+		
+		ListNode node1 = second;
+		ListNode node2 = node1.next;
+		
+		while (node1 != null && node2 != null) {
+			ListNode temp = node2.next;
+			node2.next = node1;
+			node1 = node2;
+			node2 = temp;
 		}
-
-		secondHead.next = null;
-
-		// compare two sublists now
-		ListNode p = (p2 == null ? p1 : p2);
-		ListNode q = head;
-		while (p != null) {
-			if (p.val != q.val)
+		
+		second.next = null;
+		
+		ListNode x = (node2 == null ? node1 : node2);
+		ListNode y = head;
+		
+		while (x != null && y != null) {
+			if (x.val != y.val) {
 				return false;
-
-			p = p.next;
-			q = q.next;
-
+			}
+			x = x.next;
+			y = y.next;
 		}
-
+		
 		return true;
 	}
 	
-	public static boolean isPalindrome(ListNode head) {
+	public static boolean isPalindrome2(ListNode head) {
 		if (head == null) {
 			return true;
 		}
+		ListNode node = head;
+		ListNode previous = new ListNode(head.val);
+		
+		while (node.next != null) {
+			ListNode newNode = new ListNode(node.next.val);
+			newNode.next = previous;
+			previous = newNode;
+			node = node.next;
+		}
+		
+		ListNode x = head;
+		ListNode y = previous;
+		
+		while (x != null && y != null) {
+			if (x.val != y.val) {
+				return false;
+			}
+			x = x.next;
+			y = y.next;
+		}
+		
+		return true;
 	}
 	
 	public static void printList(ListNode head) {
