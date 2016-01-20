@@ -1,0 +1,29 @@
+Vu Dinh
+Analysis
+Homework 5
+Root Finding with Bisection, Newton and Secant Methods
+
+1. For bisection method with tolerance error of 1e-12 with 2 initial guesses as -2.5 and 1.5.
+Number of iteration: 1001 
+Root: 8.358495
+
+2. For  Newton method with tolerance error of 1e-12 with 2 initial guesses as -1.5 and 1.5.
+
+For -1.5
+Number of iteration: 1001 
+Root: -1.328049
+
+For 1.5
+Number of iteration: 1001 
+Root: -0.705784
+
+3. For  secant method with tolerance error of 1e-12 with 2 initial guesses as -1.5 and 1.5.
+
+For -1.5
+Number of iteration: 1001 
+Root: -1.227459
+
+For 1.5
+Number of iteration: 1001 
+Root: -0.684596
+

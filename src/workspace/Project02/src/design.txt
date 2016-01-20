@@ -1,0 +1,31 @@
+243 Puzzle Solver, Project Part 2:  Water & Clock
+
+Team Member 1: Giovanni Carvelli
+Team Member 2: Vu Dinh
+
+1. Explain how your common solver is able to work with both puzzles.
+
+The solver and puzzle are generic (they take the same generic argument). 
+Clock is an integer puzzle and Water is an ArrayList<Integer> puzzle.
+
+
+2. What was the type of configuration you used for each puzzle?
+
+A Clock config is the integer the pointer is currently at and a
+Water config is an ArrayList integer where each index is the bucket
+and each value is the amount of water in it.
+
+
+3. Starting with the Puzzle interface from part 1, what were the major
+changes and additions you had to make?
+
+Making the Puzzle interface and Solver class generic was a pretty major change.
+In addition, the solver no longer uses an ArrayList to store configurations; it
+uses a Djikstra-like approach where each config is added to a hashmap the first time it is encountered with the value of the config it came from.
+
+
+4. What problems, if any, did you encounter when re-designing your 
+project from part 1?
+
+The neighbors function for Water was a little difficult, but other than
+that there weren't really any major problems encountered.

@@ -1,0 +1,25 @@
+* C++ Program 
+
+i. Positives:
+	1. Program easy to understand because they are divided into classes and methods. The classes and methods are all connected to demonstrate the functionality of the program.
+	2. The details of the algorithm are hidden, hence we don't have to write the implementation of the trivial methods such as size(), begin() and etc?
+	3. C++ provides exception handling to check the error during compile and runtime.
+	4. C++ has objects which could have any different primitive types within one object. Objects would give programmers the flexibility to use inheritance and polymorphism.
+	5. Don't have to implicitly assign the specific memory for the variables in the program since the compiler would handle on its own.
+	6. C++ has rich library which has a lot of useful and already-written methods and functions that programmers could use them in their programs without implementing them again.
+
+ii. Negatives:
+1. Poor performance because C++ has exception handling which causes the program to run slower. 
+2. More complicated syntax for classes and advanced features which could be difficult to follow.
+
+* C Program
+
+i. Positives:
+1. More efficient implementation because programmers have control over low-level of code such as pointers and memory.
+2. Simpler syntax since C doesn't have classes or any advanced features that C++ has.
+3. C doesn?t have overhead features such as exception handling which would boost the performance of the program.
+
+ii. Negatives:
+1. Program more difficult to follow because it is organized into classes or objects. Instead, everything is built as a struct.
+2. Have to implement all of data structures and functions because there are no collections or complex types.
+

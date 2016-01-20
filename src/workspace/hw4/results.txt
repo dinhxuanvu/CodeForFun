@@ -1,0 +1,22 @@
+------- Running Program -------
+a) a=1,b=−10^5,c=1:
+Quadratic Solver, version v2.0e
+Equation to be solved: 1x.2 + -100000x + 1 = 0
+The quadratic has real roots: 99999.999990 and 0.000010
+b) a=6×10^30,b=5×10^30,c=−4×10^30:
+Quadratic Solver, version v2.0e
+Equation to be solved: 6e+30x.2 + 5e+30x + -4e+30 = 0
+The quadratic has real roots: -0.416667 and 1.600000
+c) a = 10^−30,b = −10^30,c = 10^30:
+Quadratic Solver, version v2.0e
+Equation to be solved: 1e-30x.2 + -1e+30x + 1e+30 = 0
+The quadratic has real roots: 499999999999999974693567648537009433481822505506705036541952.000000 and 2.000000
+d) a=10^-5,b=10^5,c=-10^-10:
+Quadratic Solver, version v2.0e
+Equation to be solved: 1e-05x.2 + 100000x + 1e-10 = 0
+The quadratic has real roots: -7147483648.000000 and -0.000000
+e) a=-10^-10,b=−10^20,c=1:
+Quadratic Solver, version v2.0e
+Equation to be solved: -1e-10x.2 + -1e+20x + 1 = 0
+The quadratic has real roots: -500000000000000009942312419328.000000 and 0.000000
+------- Ending Program -------

@@ -1,0 +1,7 @@
+1. C++ and C programs without optimization:
+Execution time for C++ program: 8.838 ms
+Execution time for C program: 5.537 ms
+- The execution time for C++ is much higher then the execution time in C because the C++ has exception handling, which is overhead feature. The exception handling would cause the program run slower. Also, C++ lets compiler handle the memory allocation. As a result, there is not an efficient way to manually handle the memory to optimize the performance.
+- In this case, the compiler runs in static mode, which doesn?t allow the option to use dynamic library. Therefore, the compiler has to compile the entire library and include that part into the execution file. The file, for that reason, is bigger and the runtime is longer as well.
+- The C++ program is divided into several methods and classes when the C++ only contains simple functions. Therefore, the C++ program needs more time to compile and also the execution file is bigger.
+

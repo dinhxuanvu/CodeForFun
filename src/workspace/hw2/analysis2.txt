@@ -1,0 +1,6 @@
+2. Optimized C++ and C programs:
+Execution time for optimized C++ program: 8.707 ms
+Execution time for C program: 5.537 ms
+- The C++ program is still slower than C program because the optimization doesn?t change the fundamental differences between C++ and C.
+- The optimized C++ program is running faster than the C++ program without optimization. There are couple things, which are used to optimize the C++ program. First of all, the condition in the if statement is changed from incrementing order to decrementing order. Also, the condition in if statement could be used as pre-decrementing instead of post-decrementing. Secondly, all of integer variables that will always be positive would be changed to unsigned integer variables.
+- The C program uses manual memory allocation, which allows programmers to manage the memory location with the specific purpose which would increase efficiency. As a result, C program is always more efficient and faster than C++ program even without optimization.

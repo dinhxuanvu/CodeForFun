@@ -1,0 +1,75 @@
+Vu Dinh
+HW4
+Analysis
+
+1. Test Case 1
+For the Quadratic Solver with double precision:
+a) a=1,b=?10^5,c=1:
+Quadratic Solver, version v2.0e
+Equation to be solved: 1x.2 + -100000x + 1 = 0
+The quadratic has real roots: 99999.999990 and 0.000010
+
+For the Quadratic Solver with single precision:
+a) a=1,b=?10^5,c=1:
+Quadratic Solver, version v2.0e
+Equation to be solved: 1x.2 + -100000x + 1 = 0
+The quadratic has real roots: 100000.000000 and 0.000010
+
+
+2.  Test Case 2
+   For the Quadratic Solver with double precision:
+b) a=6?10^30,b=5?10^30,c=?4?10^30:
+Equation to be solved: 6e+30x.2 + 5e+30x + -4e+30 = 0
+The quadratic has real roots: -0.416667 and 1.600000
+
+For the Quadratic Solver with single precision:
+b) a=6?10^30,b=5?10^30,c=?4?10^30:
+Quadratic Solver, version v2.0e
+Equation to be solved: 6e+30x.2 + 5e+30x + -4e+30 = 0
+The quadratic has real roots: -nan and -nan
+
+
+3. Test Case 3
+For the Quadratic Solver with double precision:
+
+c) a = 10^?30,b = ?10^30,c = 10^30:
+Equation to be solved: 1e-30x.2 + -1e+30x + 1e+30 = 0
+The quadratic has real roots: 499999999999999974693567648537009433481822505506705036541952.000000 and 2.000000
+
+For the Quadratic Solver with single precision:
+c) a = 10^?30,b = ?10^30,c = 10^30:
+Quadratic Solver, version v2.0e
+Equation to be solved: 1e-30x.2 + -1e+30x + 1e+30 = 0
+The quadratic has real roots: inf and -nan
+
+
+4. Test Case 4
+For the Quadratic Solver with double precision:
+d) a=10^-5,b=10^5,c=-10^-10:
+Equation to be solved: 1e-05x.2 + 100000x + 1e-10 = 0
+The quadratic has real roots: -7147483648.000000 and -0.000000
+
+For the Quadratic Solver with single precision:
+d) a=10^-5,b=10^5,c=-10^-10:
+Quadratic Solver, version v2.0e
+Equation to be solved: 1e-05x.2 + 100000x + 1e-10 = 0
+The quadratic has real roots: -7147483648.000000 and -0.000000
+
+5. Test Case 5
+For the Quadratic Solver with double precision:
+e) a=-10^-10,b=?10^20,c=1:
+Equation to be solved: -1e-10x.2 + -1e+20x + 1 = 0
+The quadratic has real roots: -500000000000000009942312419328.000000 and 0.000000
+
+For the Quadratic Solver with single precision:
+e) a=-10^-10,b=?10^20,c=1:
+Quadratic Solver, version v2.0e
+Equation to be solved: -1e-10x.2 + -1e+20x + 1 = 0
+The quadratic has real roots: -500000007523733109938344427520.000000 and 0.000000
+
+Analysis:
+	With the proper changes in the program, the program is able to calculate the quadratic equations without significant errors with catastrophic cancellation or overflow.
+	Comparing between double precision (with double variables) and single previous (without float variables), the results come out with differences. Since the double variables have better precision which can hold much bigger numbers then float variables. As a result, the solver with double variables generates a better results which are more accurate and closer to the real results. If the numbers are so small that they are practically zero, the float variables would hold those numbers as zero. Therefore, the division between a number with those float variables is considered as a number divides by zero which is mathematical error. For example, test case 3 presents that specific error.
+
+
+
